@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<!-- ================================================================
+     ✅ INSTRUÇÕES: Antes de subir no GitHub, faça uma busca por:
+     COLE_AQUI_O_LINK_DA_KIWIFY
+     e substitua pelo link do checkout do seu produto na Kiwify.
+     São 3 botões no total — substitua todos.
+     Exemplo: https://pay.kiwify.com.br/xxxxxxx
+================================================================ -->
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dieta da Selva para Homens — Protocolo de Reativação Masculina</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green-dark: #0d2b1a;
+    --green-mid: #1a4d2e;
+    --green-bright: #2d7a45;
+    --green-accent: #4caf72;
+    --green-glow: #6fcf97;
+    --black: #080c09;
+    --off-black: #111710;
+    --gray: #1e2a22;
+    --text: #e8f0ea;
+    --text-dim: #8fa898;
+    --red-alert: #c0392b;
+    --gold: #c9a84c;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--black);
+    color: var(--text);
+    font-family: 'Source Serif 4', Georgia, serif;
+    overflow-x: hidden;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    background:
+      radial-gradient(ellipse at 50% 0%, rgba(45,122,69,0.18) 0%, transparent 65%),
+      radial-gradient(ellipse at 80% 60%, rgba(13,43,26,0.9) 0%, transparent 70%),
+      linear-gradient(180deg, #080c09 0%, #0d1a11 60%, #080c09 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 24px 60px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      repeating-linear-gradient(0deg, transparent, transparent 80px, rgba(45,122,69,0.03) 80px, rgba(45,122,69,0.03) 81px),
+      repeating-linear-gradient(90deg, transparent, transparent 80px, rgba(45,122,69,0.03) 80px, rgba(45,122,69,0.03) 81px);
+    pointer-events: none;
+  }
+
+  .hero-eyebrow {
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--green-accent);
+    margin-bottom: 24px;
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards 0.2s;
+  }
+
+  .hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(52px, 10vw, 110px);
+    line-height: 0.92;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 0 0 60px rgba(76,175,114,0.3), 0 4px 30px rgba(0,0,0,0.8);
+    opacity: 0;
+    animation: fadeUp 0.9s ease forwards 0.4s;
+    margin-bottom: 8px;
+  }
+
+  .hero h1 span {
+    color: var(--green-accent);
+    display: block;
+  }
+
+  .hero-sub {
+    font-size: clamp(16px, 2.5vw, 22px);
+    color: var(--text-dim);
+    max-width: 600px;
+    line-height: 1.6;
+    margin: 24px auto 40px;
+    opacity: 0;
+    animation: fadeUp 0.9s ease forwards 0.6s;
+    font-style: italic;
+  }
+
+  .hero-sub strong {
+    color: var(--green-glow);
+    font-style: normal;
+  }
+
+  .hero-cta {
+    opacity: 0;
+    animation: fadeUp 0.9s ease forwards 0.8s;
+  }
+
+  /* ── PAIN SECTION ── */
+  .pain {
+    background: var(--off-black);
+    padding: 80px 24px;
+    position: relative;
+  }
+
+  .pain::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--green-bright), transparent);
+  }
+
+  .container {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 11px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--green-accent);
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  .pain h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(36px, 6vw, 64px);
+    line-height: 1;
+    color: #fff;
+    margin-bottom: 32px;
+  }
+
+  .pain h2 em {
+    color: var(--red-alert);
+    font-style: normal;
+  }
+
+  .pain-list {
+    list-style: none;
+    display: grid;
+    gap: 14px;
+    margin-bottom: 40px;
+  }
+
+  .pain-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #cdd8d0;
+    padding: 16px 20px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-left: 3px solid var(--red-alert);
+  }
+
+  .pain-list li .icon {
+    font-size: 20px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .pain-callout {
+    background: rgba(192,57,43,0.1);
+    border: 1px solid rgba(192,57,43,0.3);
+    border-left: 4px solid var(--red-alert);
+    padding: 24px 28px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #e8c5c0;
+    font-style: italic;
+  }
+
+  /* ── SOLUTION ── */
+  .solution {
+    padding: 80px 24px;
+    background: var(--black);
+    position: relative;
+  }
+
+  .solution h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(36px, 6vw, 64px);
+    line-height: 1;
+    color: #fff;
+    margin-bottom: 16px;
+  }
+
+  .solution h2 span { color: var(--green-accent); }
+
+  .solution > .container > p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #b0c4b8;
+    margin-bottom: 48px;
+    max-width: 640px;
+  }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 48px;
+  }
+
+  .benefit-card {
+    background: linear-gradient(135deg, rgba(26,77,46,0.3) 0%, rgba(13,43,26,0.5) 100%);
+    border: 1px solid rgba(76,175,114,0.2);
+    padding: 28px 24px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.3s, transform 0.3s;
+  }
+
+  .benefit-card:hover {
+    border-color: rgba(76,175,114,0.5);
+    transform: translateY(-3px);
+  }
+
+  .benefit-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--green-bright), transparent);
+  }
+
+  .benefit-card .num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    color: rgba(76,175,114,0.2);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .benefit-card h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--green-glow);
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+  }
+
+  .benefit-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #9db8a6;
+  }
+
+  /* ── WHAT'S INSIDE ── */
+  .inside {
+    background: var(--gray);
+    padding: 80px 24px;
+    position: relative;
+  }
+
+  .inside::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--green-bright), transparent);
+  }
+
+  .inside h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(36px, 6vw, 60px);
+    color: #fff;
+    margin-bottom: 40px;
+    line-height: 1;
+  }
+
+  .inside h2 span { color: var(--green-accent); }
+
+  .chapters {
+    display: grid;
+    gap: 12px;
+  }
+
+  .chapter {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 22px;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid rgba(76,175,114,0.1);
+    transition: background 0.2s, border-color 0.2s;
+    cursor: default;
+  }
+
+  .chapter:hover {
+    background: rgba(45,122,69,0.1);
+    border-color: rgba(76,175,114,0.3);
+  }
+
+  .chapter-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    color: var(--green-bright);
+    min-width: 42px;
+    line-height: 1;
+  }
+
+  .chapter-info h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #e0ece4;
+    margin-bottom: 3px;
+  }
+
+  .chapter-info p {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.4;
+  }
+
+  .chapter-arrow {
+    margin-left: auto;
+    color: var(--green-bright);
+    font-size: 18px;
+    opacity: 0.5;
+  }
+
+  /* ── TESTIMONIAL / SOCIAL PROOF ── */
+  .proof {
+    padding: 80px 24px;
+    background: var(--off-black);
+  }
+
+  .proof h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(32px, 5vw, 54px);
+    color: #fff;
+    margin-bottom: 40px;
+    line-height: 1;
+  }
+
+  .proof h2 span { color: var(--green-accent); }
+
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+  }
+
+  .testimonial {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    padding: 28px 24px;
+    position: relative;
+  }
+
+  .testimonial::before {
+    content: '"';
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 80px;
+    color: var(--green-bright);
+    opacity: 0.3;
+    position: absolute;
+    top: 8px;
+    left: 18px;
+    line-height: 1;
+  }
+
+  .testimonial p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #b5c9bc;
+    font-style: italic;
+    margin-bottom: 20px;
+    margin-top: 28px;
+  }
+
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--green-mid);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--green-glow);
+    flex-shrink: 0;
+  }
+
+  .author-info strong {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #e0ece4;
+  }
+
+  .author-info span {
+    font-size: 12px;
+    color: var(--text-dim);
+  }
+
+  .stars {
+    color: var(--gold);
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+
+  /* ── PRICE / CTA ── */
+  .pricing {
+    padding: 80px 24px;
+    background: var(--black);
+    text-align: center;
+    position: relative;
+  }
+
+  .pricing::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--green-bright), transparent);
+  }
+
+  .pricing h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(36px, 6vw, 64px);
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+
+  .pricing > .container > p {
+    font-size: 17px;
+    color: var(--text-dim);
+    margin-bottom: 48px;
+    font-style: italic;
+  }
+
+  .price-box {
+    background: linear-gradient(135deg, rgba(26,77,46,0.5), rgba(13,43,26,0.8));
+    border: 1px solid rgba(76,175,114,0.3);
+    max-width: 480px;
+    margin: 0 auto 48px;
+    padding: 48px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .price-box::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--green-bright), var(--green-glow), var(--green-bright));
+  }
+
+  .price-tag {
+    margin-bottom: 8px;
+  }
+
+  .price-was {
+    font-size: 16px;
+    color: var(--text-dim);
+    text-decoration: line-through;
+    margin-bottom: 4px;
+  }
+
+  .price-now {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 80px;
+    color: #fff;
+    line-height: 1;
+    text-shadow: 0 0 40px rgba(76,175,114,0.4);
+  }
+
+  .price-now sup {
+    font-size: 36px;
+    vertical-align: top;
+    margin-top: 14px;
+    display: inline-block;
+    color: var(--green-glow);
+  }
+
+  .price-now sub {
+    font-size: 28px;
+    vertical-align: bottom;
+    margin-bottom: 8px;
+    display: inline-block;
+    color: var(--green-glow);
+  }
+
+  .price-desc {
+    font-size: 14px;
+    color: var(--text-dim);
+    margin-bottom: 32px;
+  }
+
+  .price-includes {
+    text-align: left;
+    margin-bottom: 32px;
+    border-top: 1px solid rgba(76,175,114,0.15);
+    padding-top: 24px;
+  }
+
+  .price-includes p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--green-accent);
+    margin-bottom: 14px;
+  }
+
+  .price-includes ul {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+  }
+
+  .price-includes ul li {
+    font-size: 15px;
+    color: #c5d9cc;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .price-includes ul li::before {
+    content: '✓';
+    color: var(--green-accent);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  /* ── CTA BUTTON ── */
+  .btn-cta {
+    display: inline-block;
+    background: linear-gradient(135deg, #2d7a45, #4caf72);
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px 48px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 8px 32px rgba(45,122,69,0.4);
+    width: 100%;
+    text-align: center;
+  }
+
+  .btn-cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .btn-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(45,122,69,0.6);
+  }
+
+  .btn-cta:hover::before { opacity: 1; }
+
+  .btn-cta:active { transform: translateY(0); }
+
+  .btn-guarantee {
+    margin-top: 16px;
+    font-size: 13px;
+    color: var(--text-dim);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  /* ── URGENCY BAR ── */
+  .urgency-bar {
+    background: var(--green-mid);
+    padding: 14px 24px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .urgency-bar span { color: var(--gold); }
+
+  /* ── GUARANTEE ── */
+  .guarantee {
+    padding: 60px 24px;
+    background: var(--off-black);
+    text-align: center;
+  }
+
+  .guarantee-box {
+    max-width: 560px;
+    margin: 0 auto;
+    border: 1px solid rgba(76,175,114,0.2);
+    padding: 40px 36px;
+    position: relative;
+  }
+
+  .guarantee-icon {
+    font-size: 52px;
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  .guarantee h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 12px;
+  }
+
+  .guarantee p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #9db8a6;
+  }
+
+  .guarantee p strong { color: var(--green-glow); }
+
+  /* ── FAQ ── */
+  .faq {
+    padding: 80px 24px;
+    background: var(--black);
+  }
+
+  .faq h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(32px, 5vw, 54px);
+    color: #fff;
+    margin-bottom: 40px;
+    line-height: 1;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    padding: 24px 0;
+  }
+
+  .faq-item h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--green-glow);
+    margin-bottom: 10px;
+  }
+
+  .faq-item p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #9db8a6;
+  }
+
+  /* ── FINAL CTA ── */
+  .final-cta {
+    padding: 100px 24px;
+    text-align: center;
+    background: radial-gradient(ellipse at 50% 0%, rgba(45,122,69,0.15) 0%, transparent 70%),
+                var(--off-black);
+    position: relative;
+  }
+
+  .final-cta::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--green-bright), transparent);
+  }
+
+  .final-cta h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(40px, 8vw, 90px);
+    line-height: 0.95;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 0 0 60px rgba(76,175,114,0.2);
+  }
+
+  .final-cta h2 span { color: var(--green-accent); display: block; }
+
+  .final-cta p {
+    font-size: 18px;
+    color: var(--text-dim);
+    max-width: 520px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    font-style: italic;
+  }
+
+  .final-cta .btn-cta {
+    max-width: 440px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--black);
+    border-top: 1px solid rgba(255,255,255,0.04);
+    padding: 32px 24px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.8;
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 600px) {
+    .price-now { font-size: 60px; }
+    .price-box { padding: 36px 24px; }
+    .btn-cta { font-size: 17px; padding: 18px 32px; }
+    .chapter { flex-wrap: wrap; }
+  }
+</style>
+</head>
+<body>
+
+<!-- URGENCY BAR -->
+<div class="urgency-bar">
+  🔥 Oferta de lançamento: <span>R$ 19,99</span> — por tempo limitado
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <p class="hero-eyebrow">Protocolo de Reativação Masculina</p>
+  <h1>Dieta da<span>Selva</span></h1>
+  <p class="hero-sub">
+    Você não está cansado. Você está com a <strong>testosterona no chão</strong> —
+    e a comida errada é a culpada.
+  </p>
+  <div class="hero-cta">
+    <a href="https://pay.kiwify.com.br/f48TkYu" class="btn-cta">Quero Despertar Agora →</a>
+    <p style="margin-top:14px; font-size:13px; color:var(--text-dim);">
+      Acesso imediato · PDF completo · R$ 19,99
+    </p>
+  </div>
+</section>
+
+<!-- PAIN -->
+<section class="pain">
+  <div class="container">
+    <span class="section-label">Você se reconhece aqui?</span>
+    <h2>Isso não é <em>normal.</em><br>É sinal de alerta.</h2>
+    <ul class="pain-list">
+      <li><span class="icon">😴</span> Acorda cansado mesmo dormindo 8 horas — sem explicação</li>
+      <li><span class="icon">🔥</span> Barriga crescendo sem parar, mesmo tentando fazer dieta</li>
+      <li><span class="icon">📉</span> Libido caída, sem aquele fogo que você tinha antes</li>
+      <li><span class="icon">🧠</span> Neblina mental, falta de foco e motivação zerada</li>
+      <li><span class="icon">💪</span> Dificuldade de ganhar músculo e facilidade de engordar</li>
+      <li><span class="icon">😤</span> Irritabilidade, ansiedade ou apatia constante</li>
+    </ul>
+    <div class="pain-callout">
+      Nas últimas décadas, os níveis médios de testosterona masculina caíram mais de 20%.
+      Homens de 30 anos hoje têm os níveis hormonais que seus avós tinham aos 60.
+      Isso não é coincidência — é o resultado direto da alimentação industrializada.
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section class="solution">
+  <div class="container">
+    <span class="section-label">A solução</span>
+    <h2>A dieta que o seu corpo <span>sempre precisou.</span></h2>
+    <p>
+      A Dieta da Selva é um protocolo baseado em alimentos reais — os mesmos que construíram
+      homens fortes por milênios. Sem contar caloria, sem sofrer, sem frescura.
+    </p>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="num">01</div>
+        <h3>Testosterona de volta</h3>
+        <p>Alimentos ricos em colesterol bom, zinco e gordura saturada — a matéria-prima do seu hormônio masculino.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="num">02</div>
+        <h3>Barriga indo embora</h3>
+        <p>Sem pico de insulina, sem retenção de líquido. Os primeiros resultados aparecem nas primeiras 2 semanas.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="num">03</div>
+        <h3>Energia o dia todo</h3>
+        <p>Chega da queda de energia depois do almoço. Proteína + gordura entregam combustível estável por horas.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="num">04</div>
+        <h3>Foco e clareza mental</h3>
+        <p>Sem glicose oscilando, o cérebro funciona em outro nível. Mais foco, mais presença, mais performance.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="num">05</div>
+        <h3>Simples de executar</h3>
+        <p>Cardápio semanal completo, lista de compras pronta e 6 receitas de até 15 minutos. Sem desculpa.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="num">06</div>
+        <h3>Masculinidade de volta</h3>
+        <p>Comportamentos, rotina e mentalidade de homens de alta performance — tudo junto num só lugar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSIDE -->
+<section class="inside">
+  <div class="container">
+    <span class="section-label">O que está dentro</span>
+    <h2>11 Capítulos.<br><span>Nenhum enrolação.</span></h2>
+    <div class="chapters">
+      <div class="chapter">
+        <span class="chapter-num">01</span>
+        <div class="chapter-info">
+          <h4>Por que sua Testosterona Está no Chão</h4>
+          <p>Os sintomas, as causas reais e o que está te destruindo silenciosamente</p>
+        </div>
+        <span class="chapter-arrow">›</span>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">02</span>
+        <div class="chapter-info">
+          <h4>O que é a Dieta da Selva — e por que é para homens</h4>
+          <p>O princípio central, o que pode comer e por que funciona diferente</p>
+        </div>
+        <span class="chapter-arrow">›</span>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">03</span>
+        <div class="chapter-info">
+          <h4>Os Alimentos que Disparam sua Testosterona</h4>
+          <p>Cada alimento com sua função hormonal — do ovo ao fígado bovino</p>
+        </div>
+        <span class="chapter-arrow">›</span>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">04</span>
+        <div class="chapter-info">
+          <h4>Os Venenos que Destroem sua Masculinidade</h4>
+          <p>Óleos vegetais, açúcar, soja e o fast food que está te castrando</p>
+        </div>
+        <span class="chapter-arrow">›</span>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">05</span>
+        <div class="chapter-info">
+          <h4>O Protocolo Alimentar Completo</h4>
+          <p>5 regras, janela de alimentação, suplementos e como executar</p>
+        </div>
+        <span class="chapter-arrow">›</span>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">06</span>
+        <div class="chapter-info">
+          <h4>Cardápio Semanal — 7 Dias de Ativação Hormonal</h4>
+          <p>Segunda a domingo: café, almoço e jantar prontos para copiar</p>
+        </div>
+        <span class="chapter-arrow">›</span>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">07</span>
+        <div class="chapter-info">
+          <h4>Lista de Compras Definitiva</h4>
+          <p>Tudo o que precisa comprar para a semana completa</p>
+        </div>
+        <span class="chapter-arrow">›</span>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">08</span>
+        <div class="chapter-info">
+          <h4>6 Receitas Rápidas de Alto Impacto</h4>
+          <p>Todas prontas em até 15 minutos. Sem cozinheiro, sem frescura.</p>
+        </div>
+        <span class="chapter-arrow">›</span>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">09</span>
+        <div class="chapter-info">
+          <h4>Comportamentos Masculinos de Alta Performance</h4>
+          <p>Treino, sono, banho frio, cortisol, postura e como a testosterona responde ao desafio</p>
+        </div>
+        <span class="chapter-arrow">›</span>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">10</span>
+        <div class="chapter-info">
+          <h4>A Rotina do Homem que Despertou</h4>
+          <p>Da 6h às 22h: rotina completa integrada com alimentação e comportamento</p>
+        </div>
+        <span class="chapter-arrow">›</span>
+      </div>
+      <div class="chapter">
+        <span class="chapter-num">11</span>
+        <div class="chapter-info">
+          <h4>O Manifesto Final</h4>
+          <p>O homem que você quer ser está esperando pela sua decisão</p>
+        </div>
+        <span class="chapter-arrow">›</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section class="proof">
+  <div class="container">
+    <span class="section-label">O que estão dizendo</span>
+    <h2>Homens que <span>despertaram.</span></h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>Primeira semana já percebi diferença na energia. Acordei antes do alarme pela primeira vez em anos. O cardápio é simples e funciona de verdade.</p>
+        <div class="testimonial-author">
+          <div class="avatar">MR</div>
+          <div class="author-info">
+            <strong>Marcos R.</strong>
+            <span>34 anos · São Paulo</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>Perdi 6 kg em 3 semanas sem passar fome. O capítulo sobre os venenos que destroem a testosterona me abriu os olhos. Nunca mais óleo de soja.</p>
+        <div class="testimonial-author">
+          <div class="avatar">GT</div>
+          <div class="author-info">
+            <strong>Gabriel T.</strong>
+            <span>29 anos · Curitiba</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>O que mais gostei foi a parte dos comportamentos. Não é só dieta — é um protocolo completo. Minha disposição no treino aumentou absurdamente.</p>
+        <div class="testimonial-author">
+          <div class="avatar">RL</div>
+          <div class="author-info">
+            <strong>Rafael L.</strong>
+            <span>37 anos · Rio de Janeiro</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="comprar">
+  <div class="container">
+    <span class="section-label">Investimento</span>
+    <h2>Menos que um almoço.<br>Mais que uma academia.</h2>
+    <p>Por R$ 19,99 você tem o protocolo completo — para o resto da vida.</p>
+    <div class="price-box">
+      <div class="price-tag">
+        <div class="price-was">De R$ 67,00</div>
+        <div class="price-now"><sup>R$</sup>19<sub>,99</sub></div>
+        <div class="price-desc">pagamento único · acesso imediato · PDF completo</div>
+      </div>
+      <div class="price-includes">
+        <p>O que você recebe:</p>
+        <ul>
+          <li>E-book completo: Dieta da Selva para Homens (11 capítulos)</li>
+          <li>Cardápio semanal completo de segunda a domingo</li>
+          <li>Lista de compras pronta para o mercado</li>
+          <li>6 receitas rápidas de até 15 minutos</li>
+          <li>Protocolo de comportamentos masculinos de alta performance</li>
+          <li>Rotina diária completa do homem de alta performance</li>
+        </ul>
+      </div>
+      <a href="https://pay.kiwify.com.br/f48TkYu" class="btn-cta">QUERO DESPERTAR AGORA →</a>
+      <p class="btn-guarantee">🔒 Compra segura · Kiwify · Satisfação garantida</p>
+    </div>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section class="guarantee">
+  <div class="container">
+    <div class="guarantee-box">
+      <span class="guarantee-icon">🛡️</span>
+      <h3>Garantia de 7 Dias</h3>
+      <p>
+        Se em 7 dias você não sentir que valeu cada centavo,
+        <strong>devolvemos 100% do seu dinheiro</strong> sem perguntas.
+        Você não tem nada a perder — só a fraqueza.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <span class="section-label">Dúvidas</span>
+    <h2>Perguntas Frequentes</h2>
+    <div class="faq-item">
+      <h4>Preciso ter experiência com dieta?</h4>
+      <p>Não. O protocolo foi desenhado para homens ocupados sem nenhum conhecimento prévio. As regras são simples e diretas.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Quanto tempo para ver resultados?</h4>
+      <p>A maioria percebe melhora na energia e no inchaço já na primeira semana. Resultados visuais aparecem entre 2 a 4 semanas.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Precisa cozinhar muito?</h4>
+      <p>Não. Todas as receitas são prontas em até 15 minutos e usam ingredientes simples. Há opções para quem almoça fora todo dia.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Como recebo o e-book?</h4>
+      <p>Imediatamente após a confirmação do pagamento, você recebe o link de download no seu e-mail. Acesso na hora.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Funciona para quem treina e para quem não treina?</h4>
+      <p>Funciona para os dois. O protocolo alimentar funciona independente. O capítulo de comportamentos inclui orientações de treino para quem quer potencializar os resultados.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <h2>O homem que você<span>quer ser</span></h2>
+    <p>está esperando pela sua decisão. Você pode continuar do jeito que está — ou pode mudar agora, por R$ 19,99.</p>
+    <a href="https://pay.kiwify.com.br/f48TkYu" class="btn-cta">QUERO DESPERTAR AGORA →</a>
+    <p style="margin-top: 16px; font-size: 13px; color: var(--text-dim);">
+      🔒 Pagamento seguro · Acesso imediato · Garantia de 7 dias
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Dieta da Selva para Homens — Protocolo de Reativação Masculina</p>
+  <p style="margin-top: 8px;">Este e-book é de caráter informativo e não substitui orientação médica ou nutricional.</p>
+</footer>
+
+</body>
+</html>
